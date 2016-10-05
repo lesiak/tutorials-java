@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/ -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Simplest Spring MVC Hello World Example / Tutorial - Spring Model - View - Controller Tips • Crunchify</title><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- This site is optimized with the Yoast SEO plugin v3.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Do you have any one of below question? Developing a Spring Framework MVC 4 application step-by-step.. java - Spring MVC tutorial from the scratch Spring MV">
+<meta name="robots" content="noodp">
+<meta name="keywords" content="crunchify tutorial, Developing a Spring Framework MVC application step-by-step, eclipse, java, java spring mvc, spring, Spring 4, Spring 4 MVC Hello World Tutorial, Spring 4 MVC Hello World Tutorial - Full Example, Spring AOP 4, spring framework, Spring MVC, spring mvc 3.2.1, Spring MVC 4, Spring MVC Ajax, spring mvc example, Spring MVC Fast Tutorial, Spring MVC Hello World Example, Spring MVC Tricks and Tutorials">
+<link rel="canonical" href="http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/">
+<link rel="publisher" href="https://www.google.com/+CrunchifyDotCom">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Simplest Spring MVC Hello World Example / Tutorial - Spring Model - View - Controller Tips • Crunchify">
+<meta property="og:description" content="Do you have any one of below question? Developing a Spring Framework MVC 4 application step-by-step.. java - Spring MVC tutorial from the scratch Spring MV">
+<meta property="og:url" content="http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/">
+<meta property="og:site_name" content="Crunchify">
+<meta property="article:publisher" content="https://www.facebook.com/Crunchify">
+<meta property="article:author" content="https://facebook.com/Crunchify">
+<meta property="article:tag" content="crunchify tutorial">
+<meta property="article:tag" content="Developing a Spring Framework MVC application step-by-step">
+<meta property="article:tag" content="eclipse">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="java spring mvc">
+<meta property="article:tag" content="spring">
+<meta property="article:tag" content="Spring 4">
+<meta property="article:tag" content="Spring 4 MVC Hello World Tutorial">
+<meta property="article:tag" content="Spring 4 MVC Hello World Tutorial - Full Example">
+<meta property="article:tag" content="Spring AOP 4">
+<meta property="article:tag" content="spring framework">
+<meta property="article:tag" content="Spring MVC">
+<meta property="article:tag" content="spring mvc 3.2.1">
+<meta property="article:tag" content="Spring MVC 4">
+<meta property="article:tag" content="Spring MVC Ajax">
+<meta property="article:tag" content="spring mvc example">
+<meta property="article:tag" content="Spring MVC Fast Tutorial">
+<meta property="article:tag" content="Spring MVC Hello World Example">
+<meta property="article:section" content="Spring MVC Tricks and Tutorials">
+<meta property="article:published_time" content="2013-02-23T09:08:15-05:00">
+<meta property="article:modified_time" content="2016-09-09T05:47:40-05:00">
+<meta property="og:updated_time" content="2016-09-09T05:47:40-05:00">
+<meta property="og:image" content="http://cdn.crunchify.com/wp-content/uploads/2013/02/Simplest-Spring-MVC-Hello-World-Tutorial-by-Crunchify-Eclipse-Project-Structure.png">
+<meta property="og:image:width" content="816">
+<meta property="og:image:height" content="1164">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Do you have any one of below question? Developing a Spring Framework MVC 4 application step-by-step.. java - Spring MVC tutorial from the scratch Spring MV">
+<meta name="twitter:title" content="Simplest Spring MVC Hello World Example / Tutorial - Spring Model - View - Controller Tips • Crunchify">
+<meta name="twitter:site" content="@Crunchify">
+<meta name="twitter:image" content="http://cdn.crunchify.com/wp-content/uploads/2013/02/Simplest-Spring-MVC-Hello-World-Tutorial-by-Crunchify-Eclipse-Project-Structure.png">
+<meta name="twitter:creator" content="@Crunchify">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Crunchify » Feed" href="http://feeds.feedburner.com/Crunchify">
+<link rel="alternate" type="application/rss+xml" title="Crunchify » Comments Feed" href="http://crunchify.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Crunchify » Simplest Spring MVC Hello World Example / Tutorial – Spring Model – View – Controller Tips Comments Feed" href="http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/feed/">
+<link rel="stylesheet" id="eleven40-pro-theme-css" href="./Crunchify_Tutorial_SpringMvc_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-css" href="./Crunchify_Tutorial_SpringMvc_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./Crunchify_Tutorial_SpringMvc_files/font-awesome.min.css" type="text/css" media="all">
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://cdn.crunchify.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="http://crunchify.com/wp-json/">
+
+<link rel="shortlink" href="http://crunchify.me/1UmTexk">
+<link rel="alternate" type="application/json+oembed" href="http://crunchify.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcrunchify.com%2Fsimplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://crunchify.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fcrunchify.com%2Fsimplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips%2F&amp;format=xml">
+<style type="text/css"> .enews .screenread {
+	height: 1px;
+    left: -1000em;
+    overflow: hidden;
+    position: absolute;
+    top: -1000em;
+    width: 1px; } </style><!--[if IE 7]>
+<link rel="stylesheet" href="http://cdn.crunchify.com/wp-content/plugins/wp-review-pro/assets/css/wp-review-ie7.css">
+<![endif]-->
+<meta http-equiv="refresh" content="300">
+<link rel="dns-prefetch" href="http://cdn.crunchify.com/">
+<link rel="dns-prefetch" href="http://cse.google.com/">
+
+<link rel="apple-touch-icon-precomposed" href="http://cdn.crunchify.com/wp-content/themes/crunchify/images/favicon-180x180.png">
+<link rel="apple-touch-icon" href="http://cdn.crunchify.com/wp-content/themes/crunchify/images/favicon-120x120.png" sizes="120x120">
+<link rel="apple-touch-icon" href="http://cdn.crunchify.com/wp-content/themes/crunchify/images/favicon-152x152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="http://cdn.crunchify.com/wp-content/themes/crunchify/images/favicon-512x512.png" sizes="512x512">
+
+<script async="" src="./Crunchify_Tutorial_SpringMvc_files/analytics.js.download"></script><script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4032710958875645",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43876549-1', 'auto');
+  ga('send', 'pageview');
+</script><link rel="amphtml" href="http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/amp/"><link rel="icon" href="http://cdn.crunchify.com/wp-content/uploads/2016/08/favicon-65x65.png" sizes="32x32">
+<link rel="icon" href="http://cdn.crunchify.com/wp-content/uploads/2016/08/favicon.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="http://cdn.crunchify.com/wp-content/uploads/2016/08/favicon.png">
+<meta name="msapplication-TileImage" content="http://cdn.crunchify.com/wp-content/uploads/2016/08/favicon.png">
+</head>
+<body class="single single-post postid-3997 single-format-standard header-image content-sidebar" itemscope="" itemtype="http://schema.org/WebPage" data-feedly-mini="yes"><div class="site-container"><header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="wrap"><div class="title-area"><p class="site-title" itemprop="headline"><a href="http://crunchify.com/">Crunchify</a></p></div><div class="widget-area header-widget-area"><section id="nav_menu-4" class="widget widget_nav_menu"><div class="widget-wrap"><nav class="nav-header" itemscope="" itemtype="http://schema.org/SiteNavigationElement"><ul id="menu-main" class="menu genesis-nav-menu"><li id="menu-item-5838" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5838"><a title="More than 500 Working Professional Java Tutorials" href="http://crunchify.com/category/java-web-development-tutorial/" itemprop="url"><span itemprop="name">Java Code</span></a></li>
+<li id="menu-item-6447" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-6447"><a title="Top Spring MVC Tutorials and Tips" href="http://crunchify.com/category/spring-mvc/" itemprop="url"><span itemprop="name">Spring MVC</span></a></li>
+<li id="menu-item-8211" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8211"><a href="http://crunchify.com/category/blogging/" itemprop="url"><span itemprop="name">Blogging &nbsp;<i class="fa fa-caret-down"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-8213" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8213"><a href="http://crunchify.com/category/social-media/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Social Media</span></a></li>
+</ul>
+</li>
+<li id="menu-item-5898" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5898"><a title="Best Apache Tomcat Tutorials and Hacks" href="http://crunchify.com/category/apache-tomcat/" itemprop="url"><span itemprop="name">Tomcat Tips</span></a></li>
+<li id="menu-item-9458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-9458"><a title="Latest Tweaks and Tips &amp; Tricks on Crunchify" href="http://crunchify.com/category/tips-tricks/" itemprop="url"><span itemprop="name">Tutorials+ &nbsp;<i class="fa fa-caret-down"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-5839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5839"><a title="More than 100 Eclipse Tips and Tutorials" href="http://crunchify.com/category/eclipse/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Eclipse Tips</span></a></li>
+	<li id="menu-item-5906" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5906"><a href="http://crunchify.com/category/social-media/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Social Media News</span></a></li>
+	<li id="menu-item-5901" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5901"><a href="http://crunchify.com/category/jquery/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;jQuery Articles</span></a></li>
+	<li id="menu-item-5902" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5902"><a title="JSON and JQuery Tutorials" href="http://crunchify.com/category/json/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;JSON Tutorials</span></a></li>
+	<li id="menu-item-8022" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8022"><a title="Mac OSX Tips and Tricks" href="http://crunchify.com/category/mac/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Mac OSX Hacks</span></a></li>
+	<li id="menu-item-5410" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5410"><a href="http://crunchify.com/category/ajax-tutorials/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;AJAX Articles</span></a></li>
+	<li id="menu-item-5900" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5900"><a href="http://crunchify.com/category/java-script/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;JavaScript Articles</span></a></li>
+	<li id="menu-item-5899" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5899"><a href="http://crunchify.com/category/html5/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;HTML5 Articles</span></a></li>
+</ul>
+</li>
+<li id="menu-item-5904" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5904"><a title="More than 300 WordPress Tips and Tutorials" href="http://crunchify.com/category/wordpress/" itemprop="url"><span itemprop="name">WordPress &nbsp;<i class="fa fa-caret-down"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-5601" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5601"><a title="All in One Webmaster Premium WordPress Plugin" href="http://crunchify.com/all-in-one-webmaster/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;All in One Webmaster Plugin</span></a></li>
+	<li id="menu-item-8086" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8086"><a title="Google Adsense Ads Manager WordPress Plugin " href="http://crunchify.com/google-adsense-ads-manager-wordpress-plugin/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Google Adsense Plugin</span></a></li>
+</ul>
+</li>
+<li id="menu-item-9962" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9962"><a target="_blank" href="http://crunchify.com/deals/" itemprop="url"><span itemprop="name"><i class="fa fa-tags"></i> Deals</span></a></li>
+<li id="menu-item-9860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9860"><a target="_blank" href="https://crunchify.com/services/" itemprop="url"><span itemprop="name">Hire us</span></a></li>
+<li id="menu-item-4287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4287"><a title="Ask your questions" href="http://crunchify.com/contact/" itemprop="url"><span itemprop="name">Contact &nbsp;<i class="fa fa-caret-down"></i></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-7963" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7963"><a title="Want to Advertise on Crunchify?" href="http://crunchify.com/advertise/" itemprop="url"><span itemprop="name"><i class="fa fa-caret-right" aria-hidden="true"></i>&nbsp;&nbsp;Advertise</span></a></li>
+</ul>
+</li>
+</ul></nav></div></section>
+</div></div></header><div class="site-inner"><div class="wrap"><p class="site-description" itemprop="description">We help customers create an effective online presence...</p><div class="content-sidebar-wrap"><main class="content" id="content"><article class="post-3997 post type-post status-publish format-standard has-post-thumbnail category-spring-mvc tag-crunchify-tutorial tag-developing-a-spring-framework-mvc-application-step-by-step tag-eclipse-environment tag-java tag-java-spring-mvc tag-spring tag-spring-4 tag-spring-4-mvc-hello-world-tutorial tag-spring-4-mvc-hello-world-tutorial-full-example tag-spring-aop-4 tag-spring-framework tag-spring-mvc tag-spring-mvc-3-2-1 tag-spring-mvc-4 tag-spring-mvc-ajax tag-spring-mvc-example tag-spring-mvc-fast-tutorial tag-spring-mvc-hello-world-example entry" itemscope="" itemtype="http://schema.org/CreativeWork"><header class="entry-header"><div class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList"><span class="breadcrumb-link-wrap" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="http://crunchify.com/" itemprop="item"><span itemprop="name">Crunchify</span></a></span>&nbsp; <i class="fa fa-caret-right" aria-hidden="true"></i> &nbsp;<span class="breadcrumb-link-wrap" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="http://crunchify.com/category/spring-mvc/" itemprop="item"><span itemprop="name">Spring MVC Tricks and Tutorials</span></a></span>&nbsp; <i class="fa fa-caret-right" aria-hidden="true"></i> &nbsp;Simplest Spring MVC Hello World Example / Tutorial – S ...</div><h1 class="entry-title" itemprop="headline">Simplest Spring MVC Hello World Example / Tutorial – Spring Model – View – Controller Tips</h1> 
+
+		<p class="entry-meta-shortlink"><span class="custom-shortlink hide-on-mobile"><i class="fa fa-link" aria-hidden="true"></i> <input readonly="" type="text" class="shortlink-textbox" value="http://crunchify.me/1UmTexk" onclick="this.focus(); this.select();"></span>
+
+        	</p><p class="entry-meta"><i class="fa fa-clock-o"></i> Last Updated on <time class="entry-time" itemprop="datePublished" datetime="2016-09-09">9 September, 2016</time> &nbsp;by&nbsp; <i class="fa fa-user"></i> <span class="entry-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><a href="http://crunchify.com/about" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">App Shah</span></a></span> <span class="entry-comments-link"><a href="http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/#comments"><span class="dsq-postid" data-dsqidentifier="3997 http://crunchify.com/?p=3997">287 Comments</span></a></span> </p></header><div class="entry-content" itemprop="text">
+<!-- Easy Plugin for AdSense V9.61 -->
+<!-- [leadin: 0 urCount: 0 urMax: 0] -->
+<div class="ezAdsense adsense adsense-leadin" style="text-align:center;margin:0px;"><div style="margin-bottom:20px;margin-top:1px;">
+
+<!-- Crunchify.Post.Top -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4032710958875645" data-ad-slot="7425196307"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+<div style="clear:both"></div></div>
+<!-- Easy Plugin for AdSense V9.61 -->
+<p>Do you have any one of below question?</p>
+<ul>
+<li>Developing a&nbsp;<a href="http://crunchify.com/category/spring-mvc/" target="_blank">Spring&nbsp;Framework&nbsp;MVC</a>&nbsp;4 application step-by-step..</li>
+<li><a href="http://crunchify.com/category/java-web-development-tutorial/" target="_blank">java</a> –&nbsp;Spring MVC tutorial&nbsp;from the scratch</li>
+<li>Spring MVC&nbsp;Fast&nbsp;Tutorial</li>
+<li>Spring MVC&nbsp;Framework&nbsp;Tutorial</li>
+<li>First&nbsp;Spring MVC&nbsp;application&nbsp;tutorial</li>
+<li>Spring 4 MVC Tutorials, <a href="http://crunchify.com/category/ajax-tutorials/" target="_blank">AJAX Demo</a>, <a href="http://crunchify.com/category/jquery/" target="_blank">jQuery Demo</a>, <a href="http://crunchify.com/category/java-script/" target="_blank">JavaScript Demo</a>, Tips &amp; Tricks&nbsp;Spring 4 MVC</li>
+</ul>
+<p>Then you are at right place. Here I’ll demonstrate simple&nbsp;<code>Spring MVC framework</code> for building web applications.</p>
+<p class="coolh3">First thing first – Let’s Setup Environment</p>
+<p>I’m using below tools which you may need to download if you don’t have already.</p>
+<ol>
+<li>Tomcat 8.0.37 – Download latest Apache Tomcat from this&nbsp;<a href="http://tomcat.apache.org/download-80.cgi" target="_blank">link</a>.</li>
+<li>Make sure you download Eclipse IDE for&nbsp;<code>Java EE</code> Developers (<code>Neon v4.6</code>) – Download <a href="http://www.eclipse.org/downloads/eclipse-packages/" target="_blank">link</a>. (diagram below)</li>
+<li>Spring 4.3.1 (No download required) – we will use <a href="http://crunchify.com/how-to-import-all-spring-mvc-dependencies-to-your-maven-project/" target="_blank">Maven dependency</a>.</li>
+<li>JDK 1.8 – Download <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">link</a>.</li>
+</ol>
+<p>Make sure you download <code>Java EE</code>:</p>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Eclipse-IDE-for-Java-EE-Developers-Crunchify-Tips.png" rel="attachment wp-att-8448"><img class="alignnone size-full wp-image-8448" src="./Crunchify_Tutorial_SpringMvc_files/Eclipse-IDE-for-Java-EE-Developers-Crunchify-Tips.png" alt="Eclipse IDE for Java EE Developers - Crunchify Tips" width="1576" height="266" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Eclipse-IDE-for-Java-EE-Developers-Crunchify-Tips.png 1576w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Eclipse-IDE-for-Java-EE-Developers-Crunchify-Tips-768x130.png 768w" sizes="(max-width: 1576px) 100vw, 1576px"></a></p>
+<p>Main goal for this tutorial to create Spring MVC Application in the&nbsp;<strong><code>simplest way</code></strong>. This is how our <code>application result</code> will look like. This&nbsp;is a final result once you complete all below steps.</p>
+<h3>Here is a final result: Welcome page ==&gt; index.jsp</h3>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Message-Coming-from-Controller.png"><img class="alignnone wp-image-6823" src="./Crunchify_Tutorial_SpringMvc_files/CrunchifySpringMVCTutorial-index.jsp-page.png" alt="CrunchifySpringMVCTutorial index.jsp page" width="728" height="197" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/CrunchifySpringMVCTutorial-index.jsp-page.png 1582w, http://cdn.crunchify.com/wp-content/uploads/2013/02/CrunchifySpringMVCTutorial-index.jsp-page-768x208.png 768w" sizes="(max-width: 728px) 100vw, 728px"></a></p>
+<h3>Result returns from Controller Class 🙂</h3>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Message-Coming-from-Controller.png"><img class="alignnone wp-image-6822" src="./Crunchify_Tutorial_SpringMvc_files/Message-Coming-from-Controller.png" alt="Message Coming from Controller" width="728" height="218" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Message-Coming-from-Controller.png 1586w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Message-Coming-from-Controller-768x230.png 768w" sizes="(max-width: 728px) 100vw, 728px"></a></p>
+<p class="coolh3">Now Let’s get started on Tutorial</p>
+<h3>Step-1</h3>
+<ul>
+<li>Open <a href="http://crunchify.com/missing-maven-settings-xml-file-for-your-eclipse-what-if-you-need-two-settings-xml-file-for-work-personal-workspace/" target="_blank">Eclipse</a></li>
+<li>Create <code>New Eclipse Workspace</code> – This is <code>must</code> to avoid any existing workspace config issue.</li>
+</ul>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Create-New-Eclipse-Workspace-Crunchify-Tips.png"><img class="alignnone size-full wp-image-9467" src="./Crunchify_Tutorial_SpringMvc_files/Create-New-Eclipse-Workspace-Crunchify-Tips.png" alt="Create New Eclipse Workspace - Crunchify Tips" width="1178" height="478" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Create-New-Eclipse-Workspace-Crunchify-Tips.png 1178w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Create-New-Eclipse-Workspace-Crunchify-Tips-768x312.png 768w" sizes="(max-width: 1178px) 100vw, 1178px"></a></p>
+<h3>Step-2</h3>
+<ul>
+<li>Click on <code>File</code></li>
+<li>Click on <code>New</code></li>
+<li>Choose <code>Dynamic Web Project</code></li>
+<li>One popup window, Provide Project Name: <code>CrunchifySpringMVCTutorial</code></li>
+<li>Make sure you use <code>Target Runtime</code> as <code>Apache Tomcat 8.0</code>. If you don’t see Target Runtime then <a href="http://crunchify.com/step-by-step-guide-to-setup-and-install-apache-tomcat-server-in-eclipse-development-environment-ide/" target="_blank">follow these steps</a>.</li>
+</ul>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Create-New-Dynamic-Web-Project-in-Eclipse-for-Spring-MVC-tutorial-by-Crunchify.png" rel="attachment wp-att-8454"><img class="alignnone size-full wp-image-8454" src="./Crunchify_Tutorial_SpringMvc_files/Create-New-Dynamic-Web-Project-in-Eclipse-for-Spring-MVC-tutorial-by-Crunchify.png" alt="Create New Dynamic Web Project in Eclipse for Spring MVC tutorial by Crunchify" width="1166" height="1026" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Create-New-Dynamic-Web-Project-in-Eclipse-for-Spring-MVC-tutorial-by-Crunchify.png 1166w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Create-New-Dynamic-Web-Project-in-Eclipse-for-Spring-MVC-tutorial-by-Crunchify-768x676.png 768w" sizes="(max-width: 1166px) 100vw, 1166px"></a></p>
+<h3>Step-3</h3>
+<p>Convert Project to <a href="http://crunchify.com/how-to-create-a-war-file-from-eclipse-using-maven-plugin-apache-maven-war-plugin-usage/" target="_blank">Maven Project</a> to add all required Spring MVC dependencies to project.</p>
+<h4>Steps:</h4>
+<ul>
+<li>Right click on project</li>
+<li>Configure</li>
+<li>Convert to <code>Maven</code> project</li>
+</ul>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Convert-CrunchifySpringMVCTutorial-to-Maven-project.png"><img class="alignnone wp-image-6817" src="./Crunchify_Tutorial_SpringMvc_files/Convert-CrunchifySpringMVCTutorial-to-Maven-project.png" alt="Convert CrunchifySpringMVCTutorial to Maven project" width="728" height="585" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Convert-CrunchifySpringMVCTutorial-to-Maven-project.png 1048w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Convert-CrunchifySpringMVCTutorial-to-Maven-project-768x617.png 768w" sizes="(max-width: 728px) 100vw, 728px"></a></p>
+<h3>Step-4</h3>
+<p>Open <code>pom.xml</code> file and add below <code>jar dependencies</code> to project.</p>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Add-Spring-MVC-4.3.1-Dependency-to-your-Java-Maven-Project.png"><img class="alignnone size-full wp-image-9641" src="./Crunchify_Tutorial_SpringMvc_files/Add-Spring-MVC-4.3.1-Dependency-to-your-Java-Maven-Project.png" alt="Add Spring MVC 4.3.1 Dependency to your Java Maven Project" width="1172" height="450" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Add-Spring-MVC-4.3.1-Dependency-to-your-Java-Maven-Project.png 1172w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Add-Spring-MVC-4.3.1-Dependency-to-your-Java-Maven-Project-768x295.png 768w" sizes="(max-width: 1172px) 100vw, 1172px"></a></p>
+<p>Here is my <code>pom.xml</code> file. Make sure you update Java version to <code>1.7</code> if you haven’t yet moved to <code>JDK 1.8</code>.</p>
+		<div id="crayon-57f4937358162404298805" class="crayon-syntax crayon-theme-neon crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 10px; margin-bottom: 15px; clear: none; font-size: 13px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-title">pom.xml</span>
+			<div class="crayon-tools" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"></div></div>
+			<div class="crayon-info" style="min-height: 18.2px !important; line-height: 18.2px !important;"></div>
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 13px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57f4937358162404298805-1">1</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-2">2</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-3">3</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-4">4</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-5">5</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-6">6</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-7">7</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-8">8</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-9">9</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-10">10</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-11">11</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-12">12</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-13">13</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-14">14</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-15">15</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-16">16</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-17">17</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-18">18</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-19">19</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-20">20</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-21">21</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-22">22</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-23">23</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-24">24</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-25">25</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-26">26</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-27">27</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-28">28</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-29">29</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-30">30</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-31">31</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-32">32</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-33">33</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-34">34</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-35">35</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-36">36</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-37">37</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-38">38</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-39">39</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-40">40</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-41">41</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-42">42</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-43">43</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-44">44</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-45">45</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-46">46</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-47">47</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-48">48</div><div class="crayon-num" data-line="crayon-57f4937358162404298805-49">49</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 13px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57f4937358162404298805-1"><span class="crayon-o">&lt;</span><span class="crayon-e">project </span><span class="crayon-v">xmlns</span><span class="crayon-o">=</span><span class="crayon-s">"http://maven.apache.org/POM/4.0.0"</span><span class="crayon-h"> </span><span class="crayon-v">xmlns</span><span class="crayon-o">:</span><span class="crayon-v">xsi</span><span class="crayon-o">=</span><span class="crayon-s">"http://www.w3.org/2001/XMLSchema-instance"</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-2"><span class="crayon-h">	</span><span class="crayon-v">xsi</span><span class="crayon-o">:</span><span class="crayon-v">schemaLocation</span><span class="crayon-o">=</span><span class="crayon-s">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-3"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">modelVersion</span><span class="crayon-o">&gt;</span><span class="crayon-cn">4.0.0</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">modelVersion</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-4"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span><span class="crayon-v">CrunchifySpringMVCTutorial</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-5"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span><span class="crayon-v">CrunchifySpringMVCTutorial</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-6"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span><span class="crayon-cn">0.0.1</span><span class="crayon-o">-</span><span class="crayon-v">SNAPSHOT</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-7"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">build</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-8"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">sourceDirectory</span><span class="crayon-o">&gt;</span><span class="crayon-v">src</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">sourceDirectory</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-9"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">plugins</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-10"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">plugin</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-11"><span class="crayon-h">				</span><span class="crayon-o">&lt;</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span><span class="crayon-v">maven</span><span class="crayon-o">-</span><span class="crayon-v">compiler</span><span class="crayon-o">-</span><span class="crayon-v">plugin</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-12"><span class="crayon-h">				</span><span class="crayon-o">&lt;</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span><span class="crayon-cn">3.1</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-13"><span class="crayon-h">				</span><span class="crayon-o">&lt;</span><span class="crayon-v">configuration</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-14"><span class="crayon-h">					</span><span class="crayon-o">&lt;</span><span class="crayon-v">source</span><span class="crayon-o">&gt;</span><span class="crayon-cn">1.8</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">source</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-15"><span class="crayon-h">					</span><span class="crayon-o">&lt;</span><span class="crayon-v">target</span><span class="crayon-o">&gt;</span><span class="crayon-cn">1.8</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">target</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-16"><span class="crayon-h">				</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">configuration</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-17"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">plugin</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-18">&nbsp;</div><div class="crayon-line" id="crayon-57f4937358162404298805-19"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">plugins</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-20"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">build</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-21"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">dependencies</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-22"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-23"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">springframework</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-24"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span><span class="crayon-v">spring</span><span class="crayon-o">-</span><span class="crayon-v">context</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-25"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span><span class="crayon-cn">4.3.1.RELEASE</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-26"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-27"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-28"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">springframework</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-29"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span><span class="crayon-v">spring</span><span class="crayon-o">-</span><span class="crayon-v">aop</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-30"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span><span class="crayon-cn">4.3.1.RELEASE</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-31"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-32"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-33"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">springframework</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-34"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span><span class="crayon-v">spring</span><span class="crayon-o">-</span><span class="crayon-v">webmvc</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-35"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span><span class="crayon-cn">4.3.1.RELEASE</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-36"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-37"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-38"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">springframework</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-39"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span><span class="crayon-v">spring</span><span class="crayon-o">-</span><span class="crayon-v">web</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-40"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span><span class="crayon-cn">4.3.1.RELEASE</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-41"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-42">&nbsp;</div><div class="crayon-line" id="crayon-57f4937358162404298805-43"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-44"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span><span class="crayon-v">javax</span><span class="crayon-sy">.</span><span class="crayon-v">servlet</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">groupId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-45"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span><span class="crayon-v">jstl</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">artifactId</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-46"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span><span class="crayon-cn">1.2</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">version</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-47"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">dependency</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-48"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">dependencies</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358162404298805-49"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">project</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div><p></p>
+<h3>Step-5</h3>
+<p>Create new Spring Configuration <code>Bean</code> file:&nbsp;<code>/WebContent/WEB-INF/crunchify-servlet.xml</code></p>
+		<div id="crayon-57f493735817c958331656" class="crayon-syntax crayon-theme-neon crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 10px; margin-bottom: 15px; clear: none; font-size: 13px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-title">/WEB-INF/crunchify-servlet.xml</span>
+			<div class="crayon-tools" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"></div></div>
+			<div class="crayon-info" style="min-height: 18.2px !important; line-height: 18.2px !important;"></div>
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 13px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57f493735817c958331656-1">1</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-2">2</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-3">3</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-4">4</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-5">5</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-6">6</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-7">7</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-8">8</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-9">9</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-10">10</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-11">11</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-12">12</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-13">13</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-14">14</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-15">15</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-16">16</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-17">17</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-18">18</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-19">19</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-20">20</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-21">21</div><div class="crayon-num" data-line="crayon-57f493735817c958331656-22">22</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 13px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57f493735817c958331656-1"><span class="crayon-o">&lt;</span><span class="crayon-e">beans </span><span class="crayon-v">xmlns</span><span class="crayon-o">=</span><span class="crayon-s">"http://www.springframework.org/schema/beans"</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-2"><span class="crayon-h">	</span><span class="crayon-v">xmlns</span><span class="crayon-o">:</span><span class="crayon-v">mvc</span><span class="crayon-o">=</span><span class="crayon-s">"http://www.springframework.org/schema/mvc"</span><span class="crayon-h"> </span><span class="crayon-v">xmlns</span><span class="crayon-o">:</span><span class="crayon-v">context</span><span class="crayon-o">=</span><span class="crayon-s">"http://www.springframework.org/schema/context"</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-3"><span class="crayon-h">	</span><span class="crayon-v">xmlns</span><span class="crayon-o">:</span><span class="crayon-v">xsi</span><span class="crayon-o">=</span><span class="crayon-s">"http://www.w3.org/2001/XMLSchema-instance"</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-4"><span class="crayon-h">	</span><span class="crayon-v">xsi</span><span class="crayon-o">:</span><span class="crayon-v">schemaLocation</span><span class="crayon-o">=</span><span class="crayon-s">"</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-5"><span class="crayon-s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.springframework.org/schema/beans&nbsp;&nbsp;&nbsp;&nbsp; </span></div><div class="crayon-line" id="crayon-57f493735817c958331656-6"><span class="crayon-s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.springframework.org/schema/beans/spring-beans.xsd</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-7"><span class="crayon-s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.springframework.org/schema/mvc </span></div><div class="crayon-line" id="crayon-57f493735817c958331656-8"><span class="crayon-s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.springframework.org/schema/mvc/spring-mvc.xsd</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-9"><span class="crayon-s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.springframework.org/schema/context </span></div><div class="crayon-line" id="crayon-57f493735817c958331656-10"><span class="crayon-s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://www.springframework.org/schema/context/spring-context.xsd"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-11">&nbsp;</div><div class="crayon-line" id="crayon-57f493735817c958331656-12"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">context</span><span class="crayon-o">:</span><span class="crayon-v">component</span><span class="crayon-o">-</span><span class="crayon-e">scan </span><span class="crayon-v">base</span><span class="crayon-o">-</span><span class="crayon-t">package</span><span class="crayon-o">=</span><span class="crayon-s">"com.crunchify.controller"</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-13">&nbsp;</div><div class="crayon-line" id="crayon-57f493735817c958331656-14"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-e">bean </span><span class="crayon-v">id</span><span class="crayon-o">=</span><span class="crayon-s">"viewResolver"</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-15"><span class="crayon-h">		</span><span class="crayon-t">class</span><span class="crayon-o">=</span><span class="crayon-s">"org.springframework.web.servlet.view.UrlBasedViewResolver"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-16"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-m">property</span><span class="crayon-h"> </span><span class="crayon-v">name</span><span class="crayon-o">=</span><span class="crayon-s">"viewClass"</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-17"><span class="crayon-h">			</span><span class="crayon-v">value</span><span class="crayon-o">=</span><span class="crayon-s">"org.springframework.web.servlet.view.JstlView"</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-18"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-m">property</span><span class="crayon-h"> </span><span class="crayon-v">name</span><span class="crayon-o">=</span><span class="crayon-s">"prefix"</span><span class="crayon-h"> </span><span class="crayon-v">value</span><span class="crayon-o">=</span><span class="crayon-s">"/WEB-INF/jsp/"</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-19"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-m">property</span><span class="crayon-h"> </span><span class="crayon-v">name</span><span class="crayon-o">=</span><span class="crayon-s">"suffix"</span><span class="crayon-h"> </span><span class="crayon-v">value</span><span class="crayon-o">=</span><span class="crayon-s">".jsp"</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-20"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">bean</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735817c958331656-21">&nbsp;</div><div class="crayon-line" id="crayon-57f493735817c958331656-22"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">beans</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div><p>In the above <code>crunchify-servlet.xml</code>&nbsp;<strong>&nbsp;</strong>configuration file, we have defined a tag <code>&lt;context:component-scan&gt;</code>&nbsp;. This will allow Spring to load all the components from package&nbsp;<code>com.crunchify.controller</code>&nbsp;&nbsp;and all its child packages.</p>
+<p>This will load our <code>CrunchifyHelloWorld.class</code>&nbsp;. Also we have defined a bean <code>viewResolver</code>. This bean will resolve the view and add prefix string <code>/WEB-INF/jsp/</code>&nbsp;&nbsp;and suffix <code>.jsp</code> to the view in ModelAndView. Note that in our <code>CrunchifyHelloWorld</code>&nbsp;class, we have return a ModelAndView object with view name welcome. This will be resolved to path <code>/WEB-INF/jsp/welcome.jsp</code>&nbsp;.</p>
+<h3>Step-6</h3>
+<p>Create new file <code>web.xml</code>. Map Spring MVC in&nbsp;<code>/WebContent/WEB-INF/web.xml</code> file.</p>
+<p><code>NOTE:</code> if you don’t see web.xml file in your “<code>dynamic web project</code>” then follow <a href="http://crunchify.com/eclipse-missing-web-xml-file-how-can-i-create-web-xml-in-eclipse/" target="_blank">these steps</a>.</p>
+		<div id="crayon-57f4937358188356657546" class="crayon-syntax crayon-theme-neon crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 10px; margin-bottom: 15px; clear: none; font-size: 13px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-title">/WEB-INF/web.xml</span>
+			<div class="crayon-tools" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-mixed-highlight" title="Contains Mixed Languages"></span></div></div>
+			<div class="crayon-info" style="min-height: 18.2px !important; line-height: 18.2px !important;"></div>
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 13px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57f4937358188356657546-1">1</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-2">2</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-3">3</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-4">4</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-5">5</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-6">6</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-7">7</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-8">8</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-9">9</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-10">10</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-11">11</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-12">12</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-13">13</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-14">14</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-15">15</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-16">16</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-17">17</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-18">18</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-19">19</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-20">20</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-21">21</div><div class="crayon-num" data-line="crayon-57f4937358188356657546-22">22</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 13px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57f4937358188356657546-1"><span class="crayon-ta">&lt;?</span><span class="crayon-e">xml </span><span class="crayon-i">version</span><span class="crayon-o">=</span><span class="crayon-s">"1.0"</span><span class="crayon-h"> </span><span class="crayon-i">encoding</span><span class="crayon-o">=</span><span class="crayon-s">"UTF-8"</span><span class="crayon-ta">?&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-2"><span class="crayon-o">&lt;</span><span class="crayon-v">web</span><span class="crayon-o">-</span><span class="crayon-e">app </span><span class="crayon-v">xmlns</span><span class="crayon-o">:</span><span class="crayon-v">xsi</span><span class="crayon-o">=</span><span class="crayon-s">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="crayon-h"> </span><span class="crayon-v">xmlns</span><span class="crayon-o">=</span><span class="crayon-s">"http://java.sun.com/xml/ns/javaee"</span><span class="crayon-h"> </span><span class="crayon-v">xsi</span><span class="crayon-o">:</span><span class="crayon-v">schemaLocation</span><span class="crayon-o">=</span><span class="crayon-s">"http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"</span><span class="crayon-h"> </span><span class="crayon-v">version</span><span class="crayon-o">=</span><span class="crayon-s">"3.0"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-3"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">display</span><span class="crayon-o">-</span><span class="crayon-v">name</span><span class="crayon-o">&gt;</span><span class="crayon-v">CrunchifySpringMVCTutorial</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">display</span><span class="crayon-o">-</span><span class="crayon-v">name</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-4"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">welcome</span><span class="crayon-o">-</span><span class="crayon-v">file</span><span class="crayon-o">-</span><span class="crayon-v">list</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-5"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">welcome</span><span class="crayon-o">-</span><span class="crayon-v">file</span><span class="crayon-o">&gt;</span><span class="crayon-v">index</span><span class="crayon-sy">.</span><span class="crayon-v">jsp</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">welcome</span><span class="crayon-o">-</span><span class="crayon-v">file</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-6"><span class="crayon-h">&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">welcome</span><span class="crayon-o">-</span><span class="crayon-v">file</span><span class="crayon-o">-</span><span class="crayon-v">list</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-7"><span class="crayon-h">&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-8"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">servlet</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-9"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">servlet</span><span class="crayon-o">-</span><span class="crayon-v">name</span><span class="crayon-o">&gt;</span><span class="crayon-v">crunchify</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">servlet</span><span class="crayon-o">-</span><span class="crayon-v">name</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-10"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">servlet</span><span class="crayon-o">-</span><span class="crayon-t">class</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-11"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">springframework</span><span class="crayon-sy">.</span><span class="crayon-v">web</span><span class="crayon-sy">.</span><span class="crayon-v">servlet</span><span class="crayon-sy">.</span><span class="crayon-v">DispatcherServlet</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-12"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">servlet</span><span class="crayon-o">-</span><span class="crayon-t">class</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-13"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">load</span><span class="crayon-o">-</span><span class="crayon-v">on</span><span class="crayon-o">-</span><span class="crayon-v">startup</span><span class="crayon-o">&gt;</span><span class="crayon-cn">1</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">load</span><span class="crayon-o">-</span><span class="crayon-v">on</span><span class="crayon-o">-</span><span class="crayon-v">startup</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-14"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">servlet</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-15"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">servlet</span><span class="crayon-o">-</span><span class="crayon-v">mapping</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-16"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">servlet</span><span class="crayon-o">-</span><span class="crayon-v">name</span><span class="crayon-o">&gt;</span><span class="crayon-v">crunchify</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">servlet</span><span class="crayon-o">-</span><span class="crayon-v">name</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-17"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">url</span><span class="crayon-o">-</span><span class="crayon-v">pattern</span><span class="crayon-o">&gt;</span><span class="crayon-o">/</span><span class="crayon-v">welcome</span><span class="crayon-sy">.</span><span class="crayon-v">jsp</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">url</span><span class="crayon-o">-</span><span class="crayon-v">pattern</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-18"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">url</span><span class="crayon-o">-</span><span class="crayon-v">pattern</span><span class="crayon-o">&gt;</span><span class="crayon-o">/</span><span class="crayon-v">welcome</span><span class="crayon-sy">.</span><span class="crayon-v">html</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">url</span><span class="crayon-o">-</span><span class="crayon-v">pattern</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-19"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-v">url</span><span class="crayon-o">-</span><span class="crayon-v">pattern</span><span class="crayon-o">&gt;</span><span class="crayon-o">*</span><span class="crayon-sy">.</span><span class="crayon-v">html</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">url</span><span class="crayon-o">-</span><span class="crayon-v">pattern</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-20"><span class="crayon-h">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">servlet</span><span class="crayon-o">-</span><span class="crayon-v">mapping</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-21"><span class="crayon-h">&nbsp;&nbsp;</span></div><div class="crayon-line" id="crayon-57f4937358188356657546-22"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">web</span><span class="crayon-o">-</span><span class="crayon-v">app</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div><p>The above code in <code>web.xml</code> will map DispatcherServlet with url pattern <code>/welcome.jsp</code>. Also note that we have define <code>index.jsp</code> as welcome file.</p>
+<p>One thing to note here is the name of servlet in <code>&lt;servlet-name&gt;</code> tag in <code>web.xml</code>. Once the DispatcherServlet is initialized, it will looks for a file name <code>[<a href="http://crunchify.com/how-to-do-java-servlet-session-management-using-cookies/" target="_blank">servlet</a>-name]-servlet.xml</code>&nbsp;&nbsp;in WEB-INF folder of web application. In this example, the framework will look for file called <code>crunchify-servlet.xml</code>.</p>
+<h3>Step-7</h3>
+<p>Create Controller Class.</p>
+<ul>
+<li>Right click on <code>Java Resources</code> -&gt; <code>src</code></li>
+<li>Click <code>New</code> -&gt; <code>Class</code></li>
+<li>Package: <code>com.crunchify.controller</code></li>
+<li>Filename: <code>CrunchifyHelloWorld.java</code></li>
+</ul>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Create-Spring-Controller-Class-CrunchifyHelloWorld.png"><img class="alignnone wp-image-6820" src="./Crunchify_Tutorial_SpringMvc_files/Create-Spring-Controller-Class-CrunchifyHelloWorld.png" alt="Create Spring Controller Class CrunchifyHelloWorld" width="728" height="562" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Create-Spring-Controller-Class-CrunchifyHelloWorld.png 1080w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Create-Spring-Controller-Class-CrunchifyHelloWorld-768x593.png 768w" sizes="(max-width: 728px) 100vw, 728px"></a></p>
+		<div id="crayon-57f4937358193046328794" class="crayon-syntax crayon-theme-neon crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 10px; margin-bottom: 15px; clear: none; font-size: 13px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-title">com.crunchify.controller.CrunchifyHelloWorld.java</span>
+			<div class="crayon-tools" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-language">Java</span></div></div>
+			<div class="crayon-info" style="min-height: 18.2px !important; line-height: 18.2px !important;"></div>
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 13px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57f4937358193046328794-1">1</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-2">2</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-3">3</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-4">4</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-5">5</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-6">6</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-7">7</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-8">8</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-9">9</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-10">10</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-11">11</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-12">12</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-13">13</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-14">14</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-15">15</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-16">16</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-17">17</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-18">18</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-19">19</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-20">20</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-21">21</div><div class="crayon-num" data-line="crayon-57f4937358193046328794-22">22</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 13px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57f4937358193046328794-1"><span class="crayon-t">package</span><span class="crayon-h"> </span><span class="crayon-v">com</span><span class="crayon-sy">.</span><span class="crayon-v">crunchify</span><span class="crayon-sy">.</span><span class="crayon-v">controller</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-2">&nbsp;</div><div class="crayon-line" id="crayon-57f4937358193046328794-3"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">springframework</span><span class="crayon-sy">.</span><span class="crayon-v">stereotype</span><span class="crayon-sy">.</span><span class="crayon-v">Controller</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-4"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">springframework</span><span class="crayon-sy">.</span><span class="crayon-v">web</span><span class="crayon-sy">.</span><span class="crayon-v">bind</span><span class="crayon-sy">.</span><span class="crayon-v">annotation</span><span class="crayon-sy">.</span><span class="crayon-v">RequestMapping</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-5"><span class="crayon-r">import</span><span class="crayon-h"> </span><span class="crayon-v">org</span><span class="crayon-sy">.</span><span class="crayon-v">springframework</span><span class="crayon-sy">.</span><span class="crayon-v">web</span><span class="crayon-sy">.</span><span class="crayon-v">servlet</span><span class="crayon-sy">.</span><span class="crayon-v">ModelAndView</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-6">&nbsp;</div><div class="crayon-line" id="crayon-57f4937358193046328794-7"><span class="crayon-c">/*</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-8"><span class="crayon-c"> * author: Crunchify.com</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-9"><span class="crayon-c"> * </span></div><div class="crayon-line" id="crayon-57f4937358193046328794-10"><span class="crayon-c"> */</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-11">&nbsp;</div><div class="crayon-line" id="crayon-57f4937358193046328794-12"><span class="crayon-n">@Controller</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-13"><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-t">class</span><span class="crayon-h"> </span><span class="crayon-e">CrunchifyHelloWorld</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-14">&nbsp;</div><div class="crayon-line" id="crayon-57f4937358193046328794-15"><span class="crayon-h">	</span><span class="crayon-n">@RequestMapping</span><span class="crayon-sy">(</span><span class="crayon-s">"/welcome"</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-16"><span class="crayon-h">	</span><span class="crayon-m">public</span><span class="crayon-h"> </span><span class="crayon-e">ModelAndView </span><span class="crayon-e">helloWorld</span><span class="crayon-sy">(</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-17">&nbsp;</div><div class="crayon-line" id="crayon-57f4937358193046328794-18"><span class="crayon-h">		</span><span class="crayon-t">String</span><span class="crayon-h"> </span><span class="crayon-v">message</span><span class="crayon-h"> </span><span class="crayon-o">=</span><span class="crayon-h"> </span><span class="crayon-s">"&lt;br&gt;&lt;div style='text-align:center;'&gt;"</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-19"><span class="crayon-h">				</span><span class="crayon-o">+</span><span class="crayon-h"> </span><span class="crayon-s">"&lt;h3&gt;********** Hello World, Spring MVC Tutorial&lt;/h3&gt;This message is coming from CrunchifyHelloWorld.java **********&lt;/div&gt;&lt;br&gt;&lt;br&gt;"</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-20"><span class="crayon-h">		</span><span class="crayon-st">return</span><span class="crayon-h"> </span><span class="crayon-r">new</span><span class="crayon-h"> </span><span class="crayon-e">ModelAndView</span><span class="crayon-sy">(</span><span class="crayon-s">"welcome"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-s">"message"</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-v">message</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-21"><span class="crayon-h">	</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57f4937358193046328794-22"><span class="crayon-sy">}</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div><p>Note that we have annotated the <code>CrunchifyHelloWorld</code> class with <code>@Controller</code> and <code>@RequestMapping("/welcome")</code>.&nbsp;When Spring scans our package, it will recognize this bean as being a <a href="http://crunchify.com/working-on-spring-mvc-project-how-to-report-list-of-all-loaded-spring-beans-during-startup/" target="_blank">Controller bean</a> for processing requests. The <code>@RequestMapping</code> annotation tells <a href="http://crunchify.com/how-to-import-all-spring-mvc-dependencies-to-your-maven-project/" target="_blank">Spring</a> that this Controller should process all requests beginning with /welcome in the URL path. That includes <code>/welcome/*</code> and <code>/welcome.html</code>.</p>
+<p>The helloWorld() method returns <code>ModelAndView</code> object. The ModelAndView object tries to resolve to a view named “welcome” and the data model is being passed back to the browser so we can access the data within the JSP. The logical view name will resolve to <code>/WEB-INF/jsp/welcome.jsp</code>&nbsp;. Logical name “welcome” which is return in ModelAndView object is mapped to path /WEB-INF/jsp/welcome.jsp.</p>
+<p>The ModelAndView object also contains a message with key “message” and Detailed value. This is the data that we are passing to our view. Normally this will be a value object in form of java bean that will contain the data to be displayed on our view. Here we are simply passing a string.</p>
+<h3>Step-8</h3>
+<p><strong> The View –&nbsp;</strong>Create new file&nbsp;<code>/WebContent/index.jsp</code>.</p>
+		<div id="crayon-57f493735819f397725325" class="crayon-syntax crayon-theme-neon crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 10px; margin-bottom: 15px; clear: none; font-size: 13px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-title">index.jsp</span>
+			<div class="crayon-tools" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-mixed-highlight" title="Contains Mixed Languages"></span></div></div>
+			<div class="crayon-info" style="min-height: 18.2px !important; line-height: 18.2px !important;"></div>
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 13px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57f493735819f397725325-1">1</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-2">2</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-3">3</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-4">4</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-5">5</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-6">6</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-7">7</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-8">8</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-9">9</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-10">10</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-11">11</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-12">12</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-13">13</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-14">14</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-15">15</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-16">16</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-17">17</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-18">18</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-19">19</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-20">20</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-21">21</div><div class="crayon-num" data-line="crayon-57f493735819f397725325-22">22</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 13px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57f493735819f397725325-1"><span class="crayon-o">&lt;</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-2"><span class="crayon-o">&lt;</span><span class="crayon-v">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-3"><span class="crayon-o">&lt;</span><span class="crayon-v">title</span><span class="crayon-o">&gt;</span><span class="crayon-e">Spring </span><span class="crayon-e">MVC </span><span class="crayon-e">Tutorial </span><span class="crayon-e">Series </span><span class="crayon-e">by </span><span class="crayon-v">Crunchify</span><span class="crayon-sy">.</span><span class="crayon-v">com</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-e">title</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-4"><span class="crayon-ta">&lt;style </span><span class="crayon-e ">type</span><span class="crayon-k ">="text/css"&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-5"><span class="crayon-k ">body </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-6"><span class="crayon-h">	</span><span class="crayon-e ">background-image</span><span class="crayon-sy">:</span><span class="crayon-h"> </span><span class="crayon-i ">url</span><span class="crayon-sy">(</span><span class="crayon-s">'http://crunchify.com/bg.png'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-7"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-8"><span class="crayon-ta">&lt;/style&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-9"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-10"><span class="crayon-o">&lt;</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-11"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">br</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-12"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-v">style</span><span class="crayon-o">=</span><span class="crayon-s">"text-align:center"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-13"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">h2</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-14"><span class="crayon-h">			</span><span class="crayon-e">Hey </span><span class="crayon-v">You</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-o">!</span><span class="crayon-o">!</span><span class="crayon-h"> </span><span class="crayon-r">This</span><span class="crayon-h"> </span><span class="crayon-st">is</span><span class="crayon-h"> </span><span class="crayon-i">your</span><span class="crayon-h"> </span><span class="crayon-cn">1st</span><span class="crayon-h"> </span><span class="crayon-e">Spring </span><span class="crayon-e">MCV </span><span class="crayon-v">Tutorial</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-o">&lt;</span><span class="crayon-v">br</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-v">br</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-15"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">h2</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-16"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-v">h3</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-17"><span class="crayon-h">			</span><span class="crayon-o">&lt;</span><span class="crayon-i">a</span><span class="crayon-h"> </span><span class="crayon-v">href</span><span class="crayon-o">=</span><span class="crayon-s">"welcome.html"</span><span class="crayon-o">&gt;</span><span class="crayon-e">Click </span><span class="crayon-e">here </span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-e">See </span><span class="crayon-e">Welcome </span><span class="crayon-v">Message</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">a</span><span class="crayon-o">&gt;</span><span class="crayon-sy">(</span><span class="crayon-st">to</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-18"><span class="crayon-h">			</span><span class="crayon-e">check </span><span class="crayon-e">Spring </span><span class="crayon-e">MVC </span><span class="crayon-v">Controller</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-sy">.</span><span class="crayon-h"> </span><span class="crayon-sy">@</span><span class="crayon-e">RequestMapping</span><span class="crayon-sy">(</span><span class="crayon-s">"/welcome"</span><span class="crayon-sy">)</span><span class="crayon-sy">)</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-19"><span class="crayon-h">		</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">h3</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-20"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-21"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f493735819f397725325-22"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div><p>Create another file&nbsp;<code>/WebContent/WEB-INF/jsp/welcome.jsp</code>.</p>
+<p><code>NOTE:</code> Don’t forget to create <code>jsp</code> folder and put <code>welcome.jsp</code> inside that 🙂</p>
+		<div id="crayon-57f49373581a9630249279" class="crayon-syntax crayon-theme-neon crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 10px; margin-bottom: 15px; clear: none; font-size: 13px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-title">welcome.jsp</span>
+			<div class="crayon-tools" style="font-size: 13px !important;height: 19.5px !important; line-height: 19.5px !important;"><span class="crayon-mixed-highlight" title="Contains Mixed Languages"></span></div></div>
+			<div class="crayon-info" style="min-height: 18.2px !important; line-height: 18.2px !important;"></div>
+			<div class="crayon-plain-wrap"></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tbody><tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 13px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-57f49373581a9630249279-1">1</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-2">2</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-3">3</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-4">4</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-5">5</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-6">6</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-7">7</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-8">8</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-9">9</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-10">10</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-11">11</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-12">12</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-13">13</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-14">14</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-15">15</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-16">16</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-17">17</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-18">18</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-19">19</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-20">20</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-21">21</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-22">22</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-23">23</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-24">24</div><div class="crayon-num" data-line="crayon-57f49373581a9630249279-25">25</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 13px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-57f49373581a9630249279-1"><span class="crayon-o">&lt;</span><span class="crayon-e">html</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-2"><span class="crayon-o">&lt;</span><span class="crayon-e">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-3"><span class="crayon-o">&lt;</span><span class="crayon-e">title</span><span class="crayon-o">&gt;</span><span class="crayon-e">Spring</span><span class="crayon-h"> </span><span class="crayon-e">MVC</span><span class="crayon-h"> </span><span class="crayon-e">Tutorial</span><span class="crayon-h"> </span><span class="crayon-e">by</span><span class="crayon-h"> </span><span class="crayon-e">Crunchify</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-e">Hello</span><span class="crayon-h"> </span><span class="crayon-e">World</span><span class="crayon-h"> </span><span class="crayon-e">Spring</span><span class="crayon-h"> </span><span class="crayon-e">MVC</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-4"><span class="crayon-h">	</span><span class="crayon-e">Example</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-e">title</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-5"><span class="crayon-ta">&lt;style </span><span class="crayon-e ">type</span><span class="crayon-k ">="text/css"&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-6"><span class="crayon-k ">body </span><span class="crayon-sy">{</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-7"><span class="crayon-h">	</span><span class="crayon-e ">background-image</span><span class="crayon-sy">:</span><span class="crayon-h"> </span><span class="crayon-i ">url</span><span class="crayon-sy">(</span><span class="crayon-s">'http://crunchify.com/bg.png'</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-8"><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-9"><span class="crayon-ta">&lt;/style&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-10"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-e">head</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-11"><span class="crayon-o">&lt;</span><span class="crayon-e">body</span><span class="crayon-o">&gt;</span><span class="crayon-sy">$</span><span class="crayon-sy">{</span><span class="crayon-v">message</span><span class="crayon-sy">}</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-12">&nbsp;</div><div class="crayon-line" id="crayon-57f49373581a9630249279-13"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">br</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-14"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-v">br</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-15"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-e">div </span><span class="crayon-v">style</span><span class="crayon-o">=</span><span class="crayon-s">"font-family: verdana; padding: 10px; border-radius: 10px; font-size: 12px; text-align:center;"</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-16">&nbsp;</div><div class="crayon-line" id="crayon-57f49373581a9630249279-17"><span class="crayon-h">		</span><span class="crayon-e">Spring </span><span class="crayon-e">MCV </span><span class="crayon-e">Tutorial </span><span class="crayon-v">by</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-i">a</span><span class="crayon-h"> </span><span class="crayon-v">href</span><span class="crayon-o">=</span><span class="crayon-s">"http://crunchify.com"</span><span class="crayon-o">&gt;</span><span class="crayon-v">Crunchify</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">a</span><span class="crayon-o">&gt;</span><span class="crayon-sy">.</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-18"><span class="crayon-h">		</span><span class="crayon-v">Click</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-i">a</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-19"><span class="crayon-h">			</span><span class="crayon-v">href</span><span class="crayon-o">=</span><span class="crayon-s">"http://crunchify.com/category/java-web-development-tutorial/"</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-20"><span class="crayon-h">			</span><span class="crayon-v">target</span><span class="crayon-o">=</span><span class="crayon-s">"_blank"</span><span class="crayon-o">&gt;</span><span class="crayon-v">here</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">a</span><span class="crayon-o">&gt;</span><span class="crayon-h"> </span><span class="crayon-st">for</span><span class="crayon-h"> </span><span class="crayon-e">all </span><span class="crayon-e">Java </span><span class="crayon-st">and</span><span class="crayon-h"> </span><span class="crayon-o">&lt;</span><span class="crayon-i">a</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-21"><span class="crayon-h">			</span><span class="crayon-v">href</span><span class="crayon-o">=</span><span class="crayon-s">'http://crunchify.com/category/spring-mvc/'</span><span class="crayon-h"> </span><span class="crayon-v">target</span><span class="crayon-o">=</span><span class="crayon-s">'_blank'</span><span class="crayon-o">&gt;</span><span class="crayon-v">here</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">a</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-22"><span class="crayon-h">		</span><span class="crayon-st">for</span><span class="crayon-h"> </span><span class="crayon-e">all </span><span class="crayon-e">Spring </span><span class="crayon-v">MVC</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">Web </span><span class="crayon-e">Development </span><span class="crayon-v">examples</span><span class="crayon-sy">.</span><span class="crayon-o">&lt;</span><span class="crayon-v">br</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-23"><span class="crayon-h">	</span><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">div</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-24"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">body</span><span class="crayon-o">&gt;</span></div><div class="crayon-line" id="crayon-57f49373581a9630249279-25"><span class="crayon-o">&lt;</span><span class="crayon-o">/</span><span class="crayon-v">html</span><span class="crayon-o">&gt;</span></div></div></td>
+					</tr>
+				</tbody></table>
+			</div>
+		</div><p>After everything this is how your workspace should look like.</p>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Simplest-Spring-MVC-Hello-World-Tutorial-by-Crunchify-Eclipse-Project-Structure.png"><img class="alignnone size-full wp-image-9642" src="./Crunchify_Tutorial_SpringMvc_files/Simplest-Spring-MVC-Hello-World-Tutorial-by-Crunchify-Eclipse-Project-Structure.png" alt="Simplest Spring MVC Hello World Tutorial by Crunchify - Eclipse Project Structure" width="816" height="1164" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Simplest-Spring-MVC-Hello-World-Tutorial-by-Crunchify-Eclipse-Project-Structure.png 816w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Simplest-Spring-MVC-Hello-World-Tutorial-by-Crunchify-Eclipse-Project-Structure-768x1096.png 768w" sizes="(max-width: 816px) 100vw, 816px"></a></p>
+<h3>Step-9</h3>
+<p>Right Click on <code>Project -&gt; Run As -&gt; Maven Build...</code></p>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Maven-Run-as-Maven-Build-in-Eclipse-IDE.png"><img class="alignnone size-full wp-image-7831" src="./Crunchify_Tutorial_SpringMvc_files/Maven-Run-as-Maven-Build-in-Eclipse-IDE.png" alt="Maven Run-as - Maven Build in Eclipse IDE" width="1120" height="270" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Maven-Run-as-Maven-Build-in-Eclipse-IDE.png 1120w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Maven-Run-as-Maven-Build-in-Eclipse-IDE-768x185.png 768w" sizes="(max-width: 1120px) 100vw, 1120px"></a></p>
+<p><code>Add Goals</code>: <code>clean install</code>. Click <code>Apply</code> and <code>Run</code>.</p>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Clean-Install-maven-Spring-project.png"><img class="alignnone wp-image-7786" src="./Crunchify_Tutorial_SpringMvc_files/Clean-Install-maven-Spring-project.png" alt="Clean Install maven Spring project" width="732" height="393" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Clean-Install-maven-Spring-project.png 1136w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Clean-Install-maven-Spring-project-768x412.png 768w" sizes="(max-width: 732px) 100vw, 732px"></a></p>
+<p>You should see build <code>success message</code>:</p>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Build-Successful-Maven-clean-install-task-in-Eclipse.png"><img class="alignnone size-full wp-image-7832" src="./Crunchify_Tutorial_SpringMvc_files/Build-Successful-Maven-clean-install-task-in-Eclipse.png" alt="Build Successful - Maven clean install task in Eclipse" width="1030" height="310" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Build-Successful-Maven-clean-install-task-in-Eclipse.png 1030w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Build-Successful-Maven-clean-install-task-in-Eclipse-768x231.png 768w" sizes="(max-width: 1030px) 100vw, 1030px"></a></p>
+<h4>Where are all of my .jar files?</h4>
+<p>You will see all .jar files under <code>/target</code> folder. <a href="http://cdn.crunchify.com/wp-content/uploads/2013/02/After-Maven-Clean-Install-target-folder-contains-all-.jar-files.png" target="_blank">Screenshot</a>.</p>
+<h3>Step-10</h3>
+<ul>
+<li>If you <code>don't see</code> Tomcat Server in <code>Servers</code> tab then follow steps to <a href="http://crunchify.com/step-by-step-guide-to-setup-and-install-apache-tomcat-server-in-eclipse-development-environment-ide/" target="_blank">add Apache Tomcat to Eclipse</a>.</li>
+<li>Deploy project to <code>Apache Tomcat</code> and start tomcat.</li>
+</ul>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Start-Tomcat-Server.png"><img class="alignnone wp-image-6806" src="./Crunchify_Tutorial_SpringMvc_files/Start-Tomcat-Server.png" alt="Start Tomcat Server" width="728" height="191" srcset="http://cdn.crunchify.com/wp-content/uploads/2012/10/Start-Tomcat-Server.png 1232w, http://cdn.crunchify.com/wp-content/uploads/2012/10/Start-Tomcat-Server-768x202.png 768w" sizes="(max-width: 728px) 100vw, 728px"></a></p>
+<p>Make sure you see below logs. That means your application is successfully deployed on Tomcat Web Server.</p>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Application-Successfully-Deployed-on-Tomcat-Server-in-Eclipse-Mars-IDE.png"><img class="alignnone size-full wp-image-7833" src="./Crunchify_Tutorial_SpringMvc_files/Application-Successfully-Deployed-on-Tomcat-Server-in-Eclipse-Mars-IDE.png" alt="Application Successfully Deployed on Tomcat Server in Eclipse Mars IDE" width="1200" height="230" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Application-Successfully-Deployed-on-Tomcat-Server-in-Eclipse-Mars-IDE.png 1200w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Application-Successfully-Deployed-on-Tomcat-Server-in-Eclipse-Mars-IDE-768x147.png 768w" sizes="(max-width: 1200px) 100vw, 1200px"></a></p>
+<h3>Step-11</h3>
+<p>Visit: <a href="http://localhost:8080/CrunchifySpringMVCTutorial/" target="_blank">http://localhost:8080/CrunchifySpringMVCTutorial/</a>&nbsp;and you should be&nbsp;all set.</p>
+<p>Hurray.. Now you know <code>Hello World Spring MVC 4 Example</code>. Let me know if you encounter any exception while running this. There are lot more example you can find <a href="http://crunchify.com/category/java-web-development-tutorial/" target="_blank">here</a>.</p>
+<p><code>Do you want to include JS, CSS and images into JSP file?</code> Follow this tutorial:&nbsp;<a href="http://crunchify.com/spring-mvc-4-2-2-best-way-to-integrate-js-and-css-file-in-jsp-file-using-mvcresources-mapping/" target="_blank">Best way to Add/Integrate JS, CSS and images into JSP file using ‘mvc:resources mapping’</a>.</p>
+<p class="coolh3">Having trouble? Any issue?</p>
+<h3>Triaging Step-1 – Having HTTP Status 404 error?</h3>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Make-sure-welcome.jsp-file-is-inside-jsp-folder.png" rel="attachment wp-att-8467"><img class="alignnone size-full wp-image-8467" src="./Crunchify_Tutorial_SpringMvc_files/Make-sure-welcome.jsp-file-is-inside-jsp-folder.png" alt="Make sure welcome.jsp file is inside jsp folder" width="1710" height="472" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Make-sure-welcome.jsp-file-is-inside-jsp-folder.png 1710w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Make-sure-welcome.jsp-file-is-inside-jsp-folder-768x212.png 768w" sizes="(max-width: 1710px) 100vw, 1710px"></a><br>
+Also, follow below tutorial:</p>
+<p><iframe width="500" height="281" src="./Crunchify_Tutorial_SpringMvc_files/kjkqYSTLVLE.html" frameborder="0" allowfullscreen=""></iframe></p>
+<h3>Triaging&nbsp;step-2 – URL doesn’t work? Tomcat error?</h3>
+<p>Make sure you add Apache Tomcat Server to <code>Targeted Runtime</code>. Which you may have selected in <code>Step-1</code>. Tomcat 7 or 8 any – server should work.</p>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Add-Target-Runtime-on-project.png"><img class="alignnone wp-image-7785 size-full" src="./Crunchify_Tutorial_SpringMvc_files/Add-Target-Runtime-on-project.png" alt="Add Target Runtime on project" width="1228" height="1066" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Add-Target-Runtime-on-project.png 1228w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Add-Target-Runtime-on-project-768x667.png 768w" sizes="(max-width: 1228px) 100vw, 1228px"></a></p>
+<h3>Triaging&nbsp;Step-3 – maven&nbsp;errors?</h3>
+<p>Make sure to update all maven dependencies.</p>
+<p><a href="./Crunchify_Tutorial_SpringMvc_files/Force-Update-dependencies-Spring-MVC-tutorial.png"><img class="alignnone wp-image-7784 size-full" src="./Crunchify_Tutorial_SpringMvc_files/Force-Update-dependencies-Spring-MVC-tutorial.png" alt="Force Update dependencies - Spring MVC tutorial" width="1046" height="1314" srcset="http://cdn.crunchify.com/wp-content/uploads/2013/02/Force-Update-dependencies-Spring-MVC-tutorial.png 1046w, http://cdn.crunchify.com/wp-content/uploads/2013/02/Force-Update-dependencies-Spring-MVC-tutorial-768x965.png 768w" sizes="(max-width: 1046px) 100vw, 1046px"></a></p>
+
+<!-- Easy Plugin for AdSense V9.61 -->
+<!-- [leadout: 1 urCount: 1 urMax: 0] -->
+<div class="ezAdsense adsense adsense-leadout" style="text-align:left;margin:0px;"><div style="margin-top:10px;margin-bottom: 25px;">
+
+Have a suggestion on article? Please chime in and share it as a comment.
+
+</div>
+
+<div class="hide-on-mobile" style="margin-bottom:24px;">
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4032710958875645" data-ad-slot="7360862032"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div style="clear:both"></div></div>
+<!-- Easy Plugin for AdSense V9.61 -->
+<!-- Crunchify.com social sharing. Get your copy here: http://crunchify.me/1VIxAsz --><div class="crunchify-social"><a class="crunchify-link crunchify-twitter" href="https://twitter.com/intent/tweet?text=Simplest%20Spring%20MVC%20Hello%20World%20Example%20/%20Tutorial%20%E2%80%93%20Spring%20Model%20%E2%80%93%20View%20%E2%80%93%20Controller%20Tips&amp;url=http://crunchify.me/1UmTexk&amp;via=Crunchify" target="_blank"><i class="fa fa-twitter fa-1x"></i></a><a class="crunchify-link crunchify-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://crunchify.me/1UmTexk" target="_blank"><i class="fa fa-facebook fa-1x"></i></a><a class="crunchify-link crunchify-whatsapp" href="whatsapp://send?text=Simplest%20Spring%20MVC%20Hello%20World%20Example%20/%20Tutorial%20%E2%80%93%20Spring%20Model%20%E2%80%93%20View%20%E2%80%93%20Controller%20Tips http://crunchify.me/1UmTexk" target="_blank"><i class="fa fa-whatsapp fa-1x"></i></a><a class="crunchify-link crunchify-googleplus hide-on-mobile" href="https://plus.google.com/share?url=http://crunchify.me/1UmTexk" target="_blank"><i class="fa fa-google-plus fa-1x"></i></a><a class="crunchify-link crunchify-pinterest" href="https://pinterest.com/pin/create/button/?url=http://crunchify.me/1UmTexk&amp;media=http://crunchify.com/wp-content/uploads/2013/02/Simplest-Spring-MVC-Hello-World-Tutorial-by-Crunchify-Eclipse-Project-Structure.png&amp;description=Simplest%20Spring%20MVC%20Hello%20World%20Example%20/%20Tutorial%20%E2%80%93%20Spring%20Model%20%E2%80%93%20View%20%E2%80%93%20Controller%20Tips" target="_blank"><i class="fa fa-pinterest fa-1x"></i></a><a class="crunchify-link crunchify-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://crunchify.me/1UmTexk&amp;title=Simplest%20Spring%20MVC%20Hello%20World%20Example%20/%20Tutorial%20%E2%80%93%20Spring%20Model%20%E2%80%93%20View%20%E2%80%93%20Controller%20Tips" target="_blank"><i class="fa fa-linkedin fa-1x"></i></a><a class="crunchify-link crunchify-buffer hide-on-mobile" href="https://buffer.com/add?url=http://crunchify.me/1UmTexk&amp;text=Simplest%20Spring%20MVC%20Hello%20World%20Example%20/%20Tutorial%20%E2%80%93%20Spring%20Model%20%E2%80%93%20View%20%E2%80%93%20Controller%20Tips" target="_blank"><i class="fa fa-plus" aria-hidden="true"></i> Buffer</a><a class="crunchify-link follow-twit hide-on-mobile" href="http://twitter.com/Crunchify" target="_blank"><i class="fa fa-twitter fa-1x"></i>&nbsp;Follow</a></div><div class="yarpp-related">
+<h3>Some more articles you might also be interested in …</h3><ol>
+<li><a href="http://crunchify.com/spring-mvc-introduction-to-spring-3-mvc-framework/" rel="bookmark" title="Spring MVC: Introduction to Spring 3.x.x and 4.x.x MVC Framework – Spring 4.2.3">Spring MVC: Introduction to Spring 3.x.x and 4.x.x MVC Framework – Spring 4.2.3 </a></li>
+<li><a href="http://crunchify.com/spring-mvc-tutorial-how-to-upload-multiple-files-to-specific-location/" rel="bookmark" title="Spring MVC Tutorial: How to Upload Multiple Files to Specific Location">Spring MVC Tutorial: How to Upload Multiple Files to Specific Location </a></li>
+<li><a href="http://crunchify.com/spring-mvc-how-to-declare-a-bean-in-spring-application/" rel="bookmark" title="Spring MVC: How to Declare a Bean in Spring Application?">Spring MVC: How to Declare a Bean in Spring Application? </a></li>
+<li><a href="http://crunchify.com/spring-mvc-how-to-access-modelmap-values-in-a-jsp/" rel="bookmark" title="Spring MVC: How to Access ModelMap Values in a JSP? Get values into JSP from Controller Class at Runtime">Spring MVC: How to Access ModelMap Values in a JSP? Get values into JSP from Controller Class at Runtime </a></li>
+<li><a href="http://crunchify.com/how-to-use-ajax-jquery-in-spring-web-mvc-jsp-example/" rel="bookmark" title="How to use AJAX, jQuery in Spring Web MVC (.jsp) – Example">How to use AJAX, jQuery in Spring Web MVC (.jsp) – Example </a></li>
+<li><a href="http://crunchify.com/how-to-update-sparkline-graph-every-3-seconds-in-spring-mvc-realtime-update/" rel="bookmark" title="How to Update Sparkline Graph Every 3 Seconds in Spring MVC (Realtime Update)">How to Update Sparkline Graph Every 3 Seconds in Spring MVC (Realtime Update) </a></li>
+<li><a href="http://crunchify.com/how-to-implement-a-linkedlist-class-from-scratch-in-java/" rel="bookmark" title="How To Implement a LinkedList Class From Scratch In Java">How To Implement a LinkedList Class From Scratch In Java </a></li>
+<li><a href="http://crunchify.com/dynamic-spline-highchart-example-with-multiple-y-axis/" rel="bookmark" title="Dynamic Spline HighChart Example with Multiple Y Axis">Dynamic Spline HighChart Example with Multiple Y Axis </a></li>
+<li><a href="http://crunchify.com/lessons-to-learn-fundamental-of-hibernate-core-implementation/" rel="bookmark" title="Lessons to Learn: Fundamental of Hibernate Core implementation">Lessons to Learn: Fundamental of Hibernate Core implementation </a></li>
+<li><a href="http://crunchify.com/java-how-to-copy-properties-from-one-bean-to-another/" rel="bookmark" title="Java: How to Copy Properties from One Bean to Another">Java: How to Copy Properties from One Bean to Another </a></li>
+</ol>
+</div>
+</div>     <div class="crunchify-social-deals"><ul>
+
+	<i class="fa fa-tags" style="font-size:18px;"></i>
+
+      <li class="post-tags-item">
+        <a target="_blank" href="http://crunchify.com/i/bluehost" class="post-tag post-tag--design">
+          <span>Bluehost: $2.95 hosting</span>
+        </a>
+      </li>
+
+      <li class="post-tags-item">
+        <a target="_blank" href="http://crunchify.com/i/maxcdn" class="post-tag post-tag--review">
+          <span>Best MaxCDN Deal</span>
+        </a>
+      </li>    
+
+      <li class="post-tags-item">
+        <a target="_blank" href="http://crunchify.com/i/genesis" class="post-tag post-tag--journal">
+          <span>Crunchify <i class="fa fa-heart"></i> Genesis</span>
+        </a>
+      </li>    
+
+      <li class="post-tags-item">
+        <a target="_blank" href="http://crunchify.com/deals/" class="post-tag post-tag--tutorial">
+          <span>All Exclusive Coupons..</span>
+        </a>
+      </li>
+
+  </ul></div>
+
+<footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="http://crunchify.com/category/spring-mvc/" rel="category tag">Spring MVC Tricks and Tutorials</a></span> <span class="entry-tags">Tagged: <a href="http://crunchify.com/tag/crunchify-tutorial/" rel="tag">crunchify tutorial</a>, <a href="http://crunchify.com/tag/developing-a-spring-framework-mvc-application-step-by-step/" rel="tag">Developing a Spring Framework MVC application step-by-step</a>, <a href="http://crunchify.com/tag/eclipse-environment/" rel="tag">eclipse</a>, <a href="http://crunchify.com/tag/java/" rel="tag">java</a>, <a href="http://crunchify.com/tag/java-spring-mvc/" rel="tag">java spring mvc</a>, <a href="http://crunchify.com/tag/spring/" rel="tag">spring</a>, <a href="http://crunchify.com/tag/spring-4/" rel="tag">Spring 4</a>, <a href="http://crunchify.com/tag/spring-4-mvc-hello-world-tutorial/" rel="tag">Spring 4 MVC Hello World Tutorial</a>, <a href="http://crunchify.com/tag/spring-4-mvc-hello-world-tutorial-full-example/" rel="tag">Spring 4 MVC Hello World Tutorial - Full Example</a>, <a href="http://crunchify.com/tag/spring-aop-4/" rel="tag">Spring AOP 4</a>, <a href="http://crunchify.com/tag/spring-framework/" rel="tag">spring framework</a>, <a href="http://crunchify.com/tag/spring-mvc/" rel="tag">Spring MVC</a>, <a href="http://crunchify.com/tag/spring-mvc-3-2-1/" rel="tag">spring mvc 3.2.1</a>, <a href="http://crunchify.com/tag/spring-mvc-4/" rel="tag">Spring MVC 4</a>, <a href="http://crunchify.com/tag/spring-mvc-ajax/" rel="tag">Spring MVC Ajax</a>, <a href="http://crunchify.com/tag/spring-mvc-example/" rel="tag">spring mvc example</a>, <a href="http://crunchify.com/tag/spring-mvc-fast-tutorial/" rel="tag">Spring MVC Fast Tutorial</a>, <a href="http://crunchify.com/tag/spring-mvc-hello-world-example/" rel="tag">Spring MVC Hello World Example</a></span></p></footer><div id="newsletter"><section id="enews-ext-6" class="widget enews-widget"><div class="widget-wrap"><div class="enews"><h4 class="widget-title widgettitle">Subscribe to our newsletter and never miss a post!</h4>
+<p>Get early access to new articles, plugins, discount codes and brief updates about what's new with Crunchify! Join more than 21000 subscribers... <i class="fa fa-check-circle"></i></p>
+			<form id="subscribe-enews-ext-6" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open( &#39;http://feedburner.google.com/fb/a/mailverify?uri=Crunchify&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true" name="enews-ext-6">
+				<label for="subbox" class="screenread">Enter your email address...</label><input type="email" value="" id="subbox" placeholder="Enter your email address..." name="email" required="required">
+				<input type="hidden" name="uri" value="Crunchify">
+				<input type="hidden" name="loc" value="en_US">
+				<input type="submit" value="Subscribe »" id="subbutton">
+			</form>
+		</div></div></section>
+</div></article><section class="author-box" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><img alt="Avatar for App Shah" title="Gravatar for App Shah" src="./Crunchify_Tutorial_SpringMvc_files/570913c563103efe5919cae51738ee44" srcset="http://2.gravatar.com/avatar/570913c563103efe5919cae51738ee44?s=180&amp;d=mm&amp;r=g 2x" class="avatar avatar-90 photo" height="90" width="90"><h4 class="author-box-title">About <span itemprop="name">App Shah</span></h4><div class="author-box-content" itemprop="description"><p>Hello &amp; Good Day from greater New York. I'm an Engineer &amp; founder of Crunchify, the largest free blogging &amp; technical resource site for beginners. Love SEO, SaaS, #webperf, WordPress, Java. With more than <a href="http://crunchify.com/advertise/#stats" target="_blank">14 millions</a> pageviews / month, Crunchify LLC, has changed the life of over thousands of individual around the globe teaching Java &amp; Web technology without spending a money online. Get latest update on <a target="_blank" href="https://www.facebook.com/Crunchify" class="crunchify-social-icon-facebook"><i class="fa fa-facebook" style="margin: 0px 5px"></i></a> and <a target="_blank" href="https://twitter.com/Crunchify" class="crunchify-social-icon-twitter"><i class="fa fa-twitter" style="margin: 0px 0px 0px 5px;"></i></a>.</p>
+</div></section>	
+	<!-- Here we load disqus comments -->
+	<div class="dcl-disqus-thread" id="comments">
+	<div id="respond">
+	<div id="disqus_thread">
+				
+	
+			</div>
+	</div>
+	</div>
+		
+			<script type="text/javascript">
+	/* <![CDATA[ */
+		var disqus_url = 'http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/';
+		var disqus_identifier = '3997 http://crunchify.com/?p=3997';
+		var disqus_container_id = 'disqus_thread';
+		var disqus_domain = 'disqus.com';
+		var disqus_shortname = 'crunchify-com';
+		var disqus_title = "Simplest Spring MVC Hello World Example \/ Tutorial &#8211; Spring Model &#8211; View &#8211; Controller Tips";
+		var disqus_config = function () {
+			var config = this; // Access to the config object
+			config.language = '';
+
+			/* Add the ability to add javascript callbacks */
+			
+			/*
+			   All currently supported events:
+				* preData — fires just before we request for initial data
+				* preInit - fires after we get initial data but before we load any dependencies
+				* onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+				* afterRender - fires when template is rendered but before we show it
+				* onReady - everything is done
+			 */
+
+			config.callbacks.preData.push(function() {
+				// clear out the container (its filled for SEO/legacy purposes)
+				document.getElementById(disqus_container_id).innerHTML = '';
+			});
+						config.callbacks.onReady.push(function() {
+				// sync comments in the background so we don't block the page
+				var script = document.createElement('script');
+				script.async = true;
+				script.src = '?cf_action=sync_comments&post_id=3997';
+
+				var firstScript = document.getElementsByTagName( "script" )[0];
+				firstScript.parentNode.insertBefore(script, firstScript);
+			});
+								};
+	/* ]]> */
+	</script>
+	
+		
+	<script type="text/javascript">
+	/* <![CDATA[ */
+		var DsqLocal = {
+			'trackbacks': [
+				],
+			'trackback_url': "http:\/\/crunchify.com\/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips\/trackback\/"		};
+	/* ]]> */
+	</script>
+			</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" itemscope="" itemtype="http://schema.org/WPSideBar"><section id="text-2" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><!-- Crunchify.Sidebar.Top -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-4032710958875645" data-ad-slot="0110036438"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br><br>
+
+<div style="clear:both"></div></div>
+		</div></section>
+<section id="text-24" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><div class="crunchify-social-share-sidebar">
+
+<a target="_blank" href="http://feeds.feedburner.com/Crunchify" class="crunchify-social-icon-rss crunchify-social-icon">
+<i class="fa fa-rss fa-2x"></i></a>
+
+<a target="_blank" href="https://twitter.com/crunchify" class="crunchify-social-icon-twitter crunchify-social-icon">
+<i class="fa fa-twitter fa-2x"></i></a>
+
+<a target="_blank" href="https://www.google.com/+CrunchifyDotCom" class="crunchify-social-icon-googleplus crunchify-social-icon">
+<i class="fa fa-google-plus fa-2x"></i></a>
+
+<a target="_blank" href="https://www.facebook.com/Crunchify" class="crunchify-social-icon-facebook crunchify-social-icon">
+<i class="fa fa-facebook fa-2x"></i></a>
+
+<a target="_blank" href="https://www.pinterest.com/Crunchify/crunchify-articles/" class="crunchify-social-icon-pinterest crunchify-social-icon">
+<i class="fa fa-pinterest-p fa-2x"></i></a>
+
+<a target="_blank" href="https://www.youtube.com/c/CrunchifyDotCom" class="crunchify-social-icon-youtube crunchify-social-icon">
+<i class="fa fa-youtube fa-2x"></i></a>
+
+<a target="_blank" href="http://profiles.wordpress.org/crunchify" class="crunchify-social-icon-wordpress">
+<i class="fa fa-wordpress fa-2x crunchify-social-icon"></i></a>
+
+</div>
+
+<div style="clear:both"></div>
+
+<form action="http://crunchify.com/search/" id="cse-search-box" style="margin-bottom: 40px;">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-4032710958875645:9846869911">
+    <input type="hidden" name="cof" value="FORID:10">
+    <input type="hidden" name="ie" value="UTF-8">
+    <input type="text" name="q" size="55" class="crunchify-search" style="border: 1px solid rgb(126, 157, 185); padding: 2px; background: url(&quot;https://www.google.com/cse/static/en/google_custom_search_watermark.gif&quot;) left center no-repeat rgb(255, 255, 255);">
+    <input type="submit" name="sa" value="Search">
+  </div>
+<input name="siteurl" type="hidden" value="crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/"><input name="ref" type="hidden" value="crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/"><input name="ss" type="hidden" value=""></form>
+
+<div style="clear:both"></div>
+
+<div class="hide-on-mobile" style="margin-top:10px;margin-bottom:35px;">
+<!-- Crunchify.Sidebar.Middle -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-4032710958875645" data-ad-slot="3437002713"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div style="clear:both"></div>
+
+<!-- 
+<a href="http://crunchify.com/i/bluehost" target="_blank"><span class="crunchify-todays-deal"><i class="fa fa-flag fa-3x pull-left"></i><i>Flash Sale is now live!</i> <br />Bluehost hosting just $2.95/month (63% off) </span>
+
+<div style="clear:both"></div> 
+
+<div style="margin-bottom:1px; margin-top:1px;border-bottom: 4px solid #a6abaf;" class="fb-page" data-href="https://www.facebook.com/Crunchify" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"></div></div>
+
+<div style="clear:both"></div> 
+--></div>
+		</div></section>
+<section id="text-25" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><div class="wrapper-top-posts">
+<ul>
+<li>Simplest Hello World <a class="top-posts" href="http://crunchify.me/1UmTexk">Spring MVC Tutorial</a> and <a class="top-posts" href="http://crunchify.me/2a5duoB">JDBC MySQL Tutorial</a>
+</li>
+
+<li> <span style="background: rgba(0,49,79,.08);color: rgba(34,59,74,.5);border-radius: 3px;padding: 4px;font-size: 10px;margin-right: 5px;">NEW</span> <a class="top-posts" href="http://crunchify.me/1VIzOI9">Start Embedded HTTP Jersey server during Java Application Startup</a></li>
+
+<li> <span style="background: rgba(0,49,79,.08);color: rgba(34,59,74,.5);border-radius: 3px;padding: 4px;font-size: 10px;margin-right: 5px;">NEW</span><a class="top-posts" href="http://crunchify.me/1UmRq7m">Top 10 Java Interview Questions Answers</a></li>
+
+<li> <a class="top-posts" href="http://crunchify.me/1UmRqEo">Java Properties File: How to Read config.properties Values in Java?</a></li>
+
+<li> <a class="top-posts" href="http://crunchify.me/1VIDpWX">Java Timer, TimerTask and futures</a> and <a href="http://crunchify.me/1UmRmEN">Java NIO Vs. IO</a></li>
+
+<li> <span style="background: rgba(0,49,79,.08);color: rgba(34,59,74,.5);border-radius: 3px;padding: 4px;font-size: 10px;margin-right: 5px;">NEW</span> <a class="top-posts" href="http://crunchify.me/1VIEb6e">Singleton Pattern, POJO &amp; more</a></li>
+					
+<li> <a class="top-posts" href="http://crunchify.me/1VIFH8t">Create Simple Jersey REST Service &amp; Send JSON Data From Java Client</a> </li>
+    
+<li> <a class="top-posts" href="http://crunchify.me/1VIFwty">How to build RESTful Service with Java using JAX-RS and Jersey (Example)</a></li>
+   
+</ul>
+    <div class="ribbon-wrapper-green"><div class="ribbon-green">Top in Tech</div></div>
+</div>
+
+<div style="clear:both"></div>
+
+<div class="matched-sidebar">
+<!-- Matched.Content.Verticle -->
+<ins class="adsbygoogle" style="display:inline-block;width:298px;height:600px" data-ad-client="ca-pub-4032710958875645" data-ad-slot="6208873112"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div style="clear:both"></div>
+
+<div style="margin-top:5px;margin-bottom:30px;">
+<!-- Crunchify.Sidebar.Bottom -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-4032710958875645" data-ad-slot="5104102712"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div style="clear:both"></div>
+
+<div class="wrapper-top-blogging">
+<ul>
+<li> <a class="top-posts" href="http://crunchify.me/1UmRO5Z">How to Start Your First Self-Hosted WordPress Blog</a></li>
+
+<li> <a class="top-posts" href="http://crunchify.me/1VIvzwo">15 Essential Settings and Optimization Tasks After Installing WordPress</a></li>
+
+<li> <span style="background: rgba(0,49,79,.08);color: rgba(34,59,74,.5);border-radius: 3px;padding: 4px;font-size: 10px;margin-right: 5px;">NEW</span><a class="top-posts" href="http://crunchify.me/1VIBuS7">How to troubleshoot higher CPU, Memory &amp; Process usage?</a></li>
+
+<li> <a class="top-posts" href="http://crunchify.me/1VItfW5">Top 7 tips to Speed up WordPress &amp; Boost Performance</a></li>
+
+<li> <a class="top-posts" href="http://crunchify.me/1VIu94Q">Detailed Guide on How to Install SSL on WordPress Site</a></li>
+
+<li> <span style="background: rgba(0,49,79,.08);color: rgba(34,59,74,.5);border-radius: 3px;padding: 4px;font-size: 10px;margin-right: 5px;">NEW</span> <a class="top-posts" href="http://crunchify.com/category/genesis-wordpress-framework/">List of all Genesis WordPress Framework Tips</a></li>
+   
+</ul>
+    <div class="ribbon-wrapper-green"><div class="ribbon-blogging">Top in Blogging</div></div>
+</div>
+
+<div style="clear:both"></div>
+
+<div class="crunchify-favorite">
+  <a href="http://crunchify.com/tag/java8-stream/" class="crunchify4" target="_blank">Java8 Stream Utils</a>
+  <a href="http://crunchify.com/tag/java-cache-tutorial/" class="crunchify2" target="_blank">Java Caching</a>
+  <a href="http://crunchify.me/1VItfW5" class="crunchify9" target="_blank">Speedup WordPress</a>
+  <a href="http://crunchify.me/1VIFx0D" class="crunchify6" target="_blank">Java Abstract</a>
+  <a href="http://crunchify.me/1UmUpwK" class="crunchify5" target="_blank">Java Static</a>
+  <a href="http://crunchify.me/1UmUUXH" class="crunchify7" target="_blank">Java Interface</a>
+  <a href="http://crunchify.me/1UmNWSk" class="crunchify8" target="_blank">Github OAuth</a>
+  <a href="http://crunchify.me/1UmS6d4" class="crunchify1" target="_blank">maven-war-plugin</a>
+  <a href="http://crunchify.com/category/making-money-online/" class="crunchify10" target="_blank">Make Money Online</a>
+  <a href="http://crunchify.com/category/nice-thoughts/" class="crunchify3" target="_blank">Nice Quotes</a>
+  <a href="http://crunchify.com/category/search-engine-optimization-seo/" class="crunchify11" target="_blank">SEO</a>
+  <a href="http://crunchify.com/tag/java-reflection/" class="crunchify5" target="_blank">Reflection</a>
+</div>
+
+<div style="clear:both"></div></div>
+		</div></section>
+</aside><div class="arrowNav">
+	<div class="arrowLeft">
+		<a href="http://crunchify.com/org-apache-catalina-lifecycleexception/" rel="prev"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>	</div>
+	<div class="arrowRight">
+		<a href="http://crunchify.com/where-is-java-installed-on-my-mac-osx-system/" rel="next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>	</div>
+</div>
+</div></div></div><div class="footer-widgets"><div class="wrap"><div class="footer-widgets-1 widget-area">		<section id="recent-posts-4" class="widget widget_recent_entries"><div class="widget-wrap">		<h4 class="widget-title widgettitle">Recently Crunched…</h4>
+		<ul>
+					<li>
+				<a href="http://crunchify.com/in-java-how-to-find-list-of-all-class-names-from-inside-jar-file-jar-class-finder-utility/">In Java How to Find List of all Class Names from inside .jar File? – Jar Class Finder Utility with Java Reflection</a>
+						</li>
+					<li>
+				<a href="http://crunchify.com/wordpress-and-amp-accelerated-mobile-pages-all-in-one-customization-for-analytics-adsense-social-media-guide-for-beginner/">WordPress and AMP (Accelerated Mobile Pages): All in one Customization for Analytics, AdSense, Social Media Guide for Beginner</a>
+						</li>
+					<li>
+				<a href="http://crunchify.com/how-to-use-hamcrest-assertthat-matchers-to-create-junit-testcases-in-java-complete-tutorial/">How to use Hamcrest assertThat() Matchers to Create JUnit testcases in Java – Complete Tutorial</a>
+						</li>
+					<li>
+				<a href="http://crunchify.com/how-to-sort-hashmap-by-key-and-value-in-java8-complete-tutorial/">How to Sort a HashMap by Key and Value in Java 8 – Complete Tutorial</a>
+						</li>
+				</ul>
+		</div></section>
+		</div><div class="footer-widgets-2 widget-area"><section id="text-30" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Get in touch for your Project…</h4>
+			<div class="textwidget"><div class="crunchify-services">
+<p><i class="fa fa-check-square-o" aria-hidden="true"></i><a class="c-service" href="https://crunchify.com/services/site-seo-review-service/" target="_blank">Site SEO Review Service</a><br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i><a class="c-service" href="https://crunchify.com/services/full-website-design-service/" target="_blank">Full Website Design Service </a><br>
+<i class="fa fa-check-square-o" aria-hidden="true"></i><a class="c-service" href="https://crunchify.com/services/wordpress-consultant-performance-optimization/" target="_blank">WordPress Consultant Service</a>
+</p></div>
+</div>
+		</div></section>
+<section id="text-10" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Search more than 700 tutorials…</h4>
+			<div class="textwidget"><form action="http://crunchify.com/search/" id="cse-search-box-footer">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-4032710958875645:9846869911">
+    <input type="hidden" name="cof" value="FORID:10">
+    <input type="hidden" name="ie" value="UTF-8">
+    <input type="text" name="q" size="55" class="crunchify-search">
+    <input type="submit" name="sa" value="Search">
+  </div>
+</form></div>
+		</div></section>
+</div><div class="footer-widgets-3 widget-area"><section id="text-27" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Popular on Crunchify…</h4>
+			<div class="textwidget"><div class="wrapper-crunchify-deals">
+<ul>
+
+<li> <a href="http://crunchify.me/1VIFVw7">How to Parse</a> &amp; <a href="http://crunchify.me/1VIFP7P">Write</a> JSONObject in Java</li>
+					
+<li> <a href="http://crunchify.com/category/java-web-development-tutorial/">300+ Java</a> and <a href="http://crunchify.com/category/spring-mvc/">100+ Spring MVC Tutorials</a> </li>
+    
+<li> <a href="http://crunchify.me/1UmUUaf">Install Apache Tomcat</a> &amp; <a href="http://crunchify.me/1UmUoZO">Bitbucket</a> in Eclipse IDE</li>
+    
+<li> <span style="background: rgba(0,49,79,.08);color: rgba(34,59,74,.5);border-radius: 3px;padding: 4px;font-size: 10px;margin-right: 5px;">NEW</span><a href="http://crunchify.me/1VIErlw">Java eNum</a> and <a href="http://crunchify.me/1UmSLeC">Synchronized Collections</a> Introduction</li>
+
+<li> <a href="http://crunchify.com/category/wordpress/">250+ WordPress</a> &amp; <a href="http://crunchify.com/category/making-money-online/">Make Money Online</a> Articles</li>
+
+</ul>
+    <div class="ribbon-wrapper-deals"><div class="ribbon-deals">Popular</div></div>
+</div>
+
+<div style="clear:both"></div></div>
+		</div></section>
+</div></div></div><footer class="site-footer" itemscope="" itemtype="http://schema.org/WPFooter"><div class="wrap">
+<div class="creds-left">
+<p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2012-16 Crunchify, LLC. &nbsp;•&nbsp; <a href="http://crunchify.com/sitemap/" target="_blank">Archives</a> &nbsp;•&nbsp; <a href="http://crunchify.com/tos/" target="_blank">TOS</a> &nbsp;•&nbsp; <a href="http://forums.crunchify.com/" target="_blank">Forums</a></p>
+</div>
+
+<div class="creds-right">
+<p><a href="http://crunchify.com/advertise/" target="_blank">Advertise</a> &nbsp;•&nbsp; <a href="http://crunchify.com/setup/" target="_blank">Setup</a> &nbsp;•&nbsp;Hosted at <a href="http://crunchify.com/i/squidix" target="_blank" rel="nofollow">Squidix</a> &amp; <a href="http://crunchify.com/i/maxcdn" target="_blank" rel="nofollow">MaxCDN</a> &nbsp;•&nbsp; Runs on <a href="http://crunchify.com/i/genesis" target="_blank" rel="nofollow">Genesis</a></p>
+</div>
+
+<div class="hide-on-mobile">
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4032710958875645" data-ad-slot="1831796969"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<p class="crunchify-top"><a href="http://crunchify.com/simplest-spring-mvc-hello-world-example-tutorial-spring-model-view-controller-tips/#content"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+<div style="clear:both"></div>
+	</div></footer></div><script type="text/javascript" src="./Crunchify_Tutorial_SpringMvc_files/brand"></script><script type="text/javascript">
+
+    var disqus_shortname = "crunchify-com";
+    if (typeof ds_loaded == "undefined") {
+        var ds_loaded = false;
+    }
+    function loadDisqus() {
+        var disqus_div = document.getElementById("disqus_thread");
+        var top = disqus_div.offsetTop;
+        var disqus_data = disqus_div.dataset;
+        if ( !ds_loaded && ( window.scrollY || window.pageYOffset ) + window.innerHeight > top ) {
+            ds_loaded = true;
+            for (var key in disqus_data) {
+                if (key.substr(0,6) == "disqus") {
+                    window["disqus_" + key.replace("disqus","").toLowerCase()] = disqus_data[key];
+								}
+                }
+                var dsq = document.createElement("script");
+                dsq.type = "text/javascript";
+                dsq.async = true;
+                dsq.src = "http://" + window.disqus_shortname + ".disqus.com/embed.js";
+                if(document.getElementById("dcl-hidden-div")) {
+                    document.getElementById("dcl-hidden-div").innerHTML = "Loading...";
+                }
+                (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(dsq);
+            }
+        }
+					var disqus_div_new = document.getElementById("disqus_thread");
+		var divExists = disqus_div_new != null;
+                if(document.body.scrollHeight < window.innerHeight){
+                    loadDisqus();
+                } else if(divExists) {
+                    window.onscroll = function() { loadDisqus(); }
+                }
+	</script><script type="text/javascript">
+                /* <![CDATA[ */
+                var hash = window.location.hash;
+                var disqus_shortname = 'crunchify-com';
+                if(hash!==''){
+                    var ds_loaded = true;
+                    var dcl_loaded = 1;
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+                        dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.84';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();}
+                /* ]]> */
+            </script>
+
+<!-- Dynamic page generated in 0.806 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2016-10-05 00:45:23 -->
+
+<!-- Compression = gzip --></body></html>
