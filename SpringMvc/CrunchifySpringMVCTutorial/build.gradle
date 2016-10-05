@@ -15,18 +15,18 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.springframework', name: 'spring-webmvc', version:'4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version:'3.2.17.RELEASE'
     compile group: 'javax.servlet', name: 'jstl', version:'1.2'
 }
 
 // Embeded Jetty for testing
 jettyRun{
-    contextPath = "spring4"
+    contextPath = "spring"
     httpPort = 8080
 }
 
 jettyRunWar{
-    contextPath = "spring4"
+    contextPath = "spring"
     httpPort = 8080
 }
 
