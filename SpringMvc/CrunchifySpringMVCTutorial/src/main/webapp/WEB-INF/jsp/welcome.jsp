@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Spring MVC Tutorial by Crunchify - Hello World Spring MVC
+    <title>Spring MVC Tutorial by Crunchify2 - Hello World Spring MVC
         Example</title>
     <style type="text/css">
         body {
@@ -14,7 +14,7 @@
 <br>
 <div style="font-family: verdana; padding: 10px; border-radius: 10px; font-size: 12px; text-align:center;">
 
-    Spring MCV Tutorial by <a href="http://crunchify.com">Crunchify</a>.
+    dasdasdas dasd Spring MCV Tutorial by <a href="http://crunchify.com">Crunchify</a>.
     Click <a
         href="http://crunchify.com/category/java-web-development-tutorial/"
         target="_blank">here</a> for all Java and <a
